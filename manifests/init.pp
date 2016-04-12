@@ -1,11 +1,15 @@
+# Simple module to handle the installation of MySQL client and ruby gem.
+#
+# @example install
+#   include mysql_client
 class mysql_client {
   package { 'mysql':
-    provider => 'gem',
     ensure   => 'installed',
+    provider => 'gem',
     require  => Package['mysql-devel'],
   }
   package { 'mysql-devel':
-    provider => 'yum',
     ensure   => 'installed',
+    provider => 'yum',
   }
 }

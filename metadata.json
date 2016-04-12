@@ -1,8 +1,8 @@
 {
-  "name": "mysql-client",
+  "name": "mysql_client",
   "version": "0.0.1",
   "author": "MSM",
-  "license": "MIT License",
+  "license": "MIT",
   "summary": "MySQL client module",
   "source": "https://github.com/lucadevitis-msm/puppet-mysql-client",
   "project_page": "https://github.com/lucadevitis-msm/puppet-mysql-client",
@@ -10,9 +10,10 @@
   "tags": ["things", "stuff"],
   "operatingsystem_support": [
     {
-    "operatingsystem":"CentOS",
-    "operatingsystemrelease":[ "5.0", "6.0", "7.0" ]
-    },
+    "operatingsystem": "CentOS",
+    "operatingsystemrelease": [ "5.0", "6.0", "7.0" ]
+    }
   ],
+  "dependencies": [],
   "data_provider": "hiera"
 }
